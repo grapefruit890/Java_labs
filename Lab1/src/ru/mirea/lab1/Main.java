@@ -30,16 +30,14 @@ public class Main {
                     return;
                 default:
                     break;
-
             }
         }
     }
 
-
     // TASK 1
-    public static void ex1() {
+    public static void ex1 () {
         System.out.println("\nTASK 1");
-        int[] array = new int[] {1, 2, 3, 4, 5};
+        int[] array = new int[]{1, 2, 3, 4, 5};
         int addition = 0;
         int mean;
 
@@ -51,7 +49,7 @@ public class Main {
         System.out.println("Addition of array = " + addition + "; Ariphmetic mean = " + mean);
     }
 
-    public static void ex2() {
+    public static void ex2 () {
         System.out.println("\nTASK 2");
         int[] array = new int[5];
         int addition = 0;
@@ -79,7 +77,7 @@ public class Main {
             if (array[iter] > max) {
                 max = array[iter];
             }
-           iter++;
+            iter++;
         }
         mean = addition / array.length;
 
@@ -88,7 +86,7 @@ public class Main {
     }
 
 
-    public static void ex3(String[] args) {
+    public static void ex3 (String[]args){
         System.out.println("\nTASK 3");
         System.out.println("Command line args: ");
 
@@ -101,12 +99,12 @@ public class Main {
         System.out.println("\nTASK 4");
         System.out.print("1");
         for (int i = 2; i < 11; i++) {
-             System.out.print(" + 1" + "/" + i);
+            System.out.print(" + 1" + "/" + i);
         }
     }
 
 
-    public static void ex5() {
+    public static void ex5 () {
         System.out.println("\nTASK 5");
         System.out.println("Enter the number to calculate the factorial");
 
@@ -114,8 +112,11 @@ public class Main {
         int number = sc.nextInt();
         int result = 1;
 
-        for (int i = 1; i < number; i++, result*= i) {}
+        for (int i = 1; i < number; i++, result *= i) {
+        }
         System.out.println("Factorial: " + result);
     }
- }
+}
+
+
 
