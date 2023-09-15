@@ -17,50 +17,25 @@ public class Main {
                    ex1();
                    break;
                case 2:
-                   ex2();
+                   ex2(args);
                    break;
-//               case 3:
-//                   ex3();
-//                   break;
-//               case 4:
-//                   ex4();
-//                   break;
-//               case 5:
-//                   ex5();
-//                   break;
-//               case 6:
-//                   ex6();
-//                   break;
-//               case 7:
-//                   ex7();
-//                   break;
-//               case 8:
-//                   ex8();
-//                   break;
-//               case 9:
-//                   ex9();
-//                   break;
-//               case 10:
-//                   ex10();
-//                   break;
            }
 
        }
     }
 
     public static void ex1() {
-        Author bob = new Author("bob", "new_email@gmail.com", 'm');
-        bob.setEmail("bobabob@gmail.com");
-
-        System.out.println("Name: " + bob.getName());
-        System.out.println("Email: " + bob.getEmail());
-        System.out.println("Gender: " + bob.getGender());
+        TestAuthor bob = new TestAuthor("Bob", "old_email", 'm');
+//        Author bob = new Author("bob", "new_email@gmail.com", 'm');
+//        bob.setEmail("bobabob@gmail.com");
+//
+//        System.out.println("Name: " + bob.getName());
+//        System.out.println("Email: " + bob.getEmail());
+//        System.out.println("Gender: " + bob.getGender());
+//        System.out.println("-----\n" + bob.toString());
     }
 
-    public static void ex2() {
-        Ball ball_1 = new Ball();
-        ball_1.setX(20);
-        ball_1.setY(100);
-        System.out.println("Ball_1 X: " + ball_1.getX() + "; Y: " + ball_1.getY());
+    public static void ex2(String[] args) {
+        System.out.println(args.length);
     }
 }

@@ -32,4 +32,10 @@ public class Author {
         this.person_email = email;
     }
 
+    public String toString() {
+        String result;
+        result = "Name: " + getName() + "; Email: " + getEmail() + "; Gender: " + getGender();
+        return result;
+    }
+
 }
