@@ -10,7 +10,6 @@ public class MovablePoint implements Movable {
         this.ySpeed = ySpeed;
     }
 
-
     @Override
     public void moveUp() {
         y = y + ySpeed;
