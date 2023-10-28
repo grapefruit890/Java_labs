@@ -8,17 +8,8 @@ public class SortingStudentsByGPA implements Comparator<Object> {
         return (((Student)ob1).getGPA() - ((Student)ob2).getGPA());
     }
 
-    public static void swap(Student[] mas, int i, int j) {
-        Student temp = mas[i];
-        mas[i] = mas[j];
-        mas[j] = temp;
-    }
-
     private  static SortingStudentsByGPA comp = new SortingStudentsByGPA();
     public static void qSort(Object[] array, int high, int low){
-       /* if(array == null || array.length == 0) return;
-        if(high <= low) return;
-*/
         Object middle = array[(low + high)/2];
         ArrayList<Object> left = new ArrayList<>();
         ArrayList<Object> right = new ArrayList<>();
