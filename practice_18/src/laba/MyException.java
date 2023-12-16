@@ -5,7 +5,9 @@ public class MyException {
         if (key == null) {
             throw new NullPointerException("null key in getDetails");
         }
-        // do something with the key
+        else {
+            System.out.println(key);
+        }
     }
 
     public static void main(String[] args) {

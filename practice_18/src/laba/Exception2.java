@@ -18,7 +18,7 @@ public class Exception2 {
     }
 
     public static void main(String[] args) {
-        Exception2_1 demo = new Exception2_1();
+        Exception2 demo = new Exception2();
         demo.exceptionDemo();
     }
 }
